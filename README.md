@@ -1,6 +1,6 @@
 # mobx-quickstart
 
-A minimal boilerplate for developing applications with React and Mobx, created with [Create React App](https://github.com/facebook/create-react-app) (ejected).
+🥘 A minimal boilerplate for developing applications with React and Mobx, created with [Create React App](https://github.com/facebook/create-react-app) (ejected).
 
 ## Available Scripts
 
