@@ -65,7 +65,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js",
+    "test": "node scripts/test.js --coverage --coverageReporters=text-lcov | coveralls",
+    "test-watch": "node scripts/test.js --coverage --watch",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "predeploy": "yarn build && yarn build-storybook && cp -r storybook-static build",
@@ -83,7 +84,9 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
-      "!src/**/*.d.ts"
+      "!src/**/*.d.ts",
+      "!src/index.js",
+      "!src/serviceWorker.js"
     ],
     "resolver": "jest-pnp-resolver",
     "setupFiles": [
@@ -140,6 +143,7 @@
     "@storybook/addon-actions": "^4.0.12",
     "@storybook/addon-links": "^4.0.12",
     "@storybook/addons": "^4.0.12",
-    "@storybook/react": "^4.0.12"
+    "@storybook/react": "^4.0.12",
+    "coveralls": "^3.0.2"
   }
 }
