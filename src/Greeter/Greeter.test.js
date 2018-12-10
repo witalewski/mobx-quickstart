@@ -1,6 +1,6 @@
 import React from 'react';
-import { Greeter } from './Greeter';
 import ShallowRenderer from 'react-test-renderer/shallow';
+import { Greeter } from './Greeter';
 
 describe('Greeter', () => {
   it('displays greeting', () => {
