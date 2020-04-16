@@ -9,7 +9,7 @@
     "@svgr/webpack": "2.4.1",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
-    "babel-jest": "23.6.0",
+    "babel-jest": "24.0.0",
     "babel-loader": "8.0.4",
     "babel-plugin-named-asset-import": "^0.2.3",
     "babel-preset-react-app": "^6.1.0",
@@ -30,9 +30,9 @@
     "fork-ts-checker-webpack-plugin-alt": "0.4.14",
     "fs-extra": "7.0.0",
     "gh-pages": "^2.0.1",
-    "html-webpack-plugin": "4.0.0-alpha.2",
+    "html-webpack-plugin": "4.0.0",
     "identity-obj-proxy": "3.0.0",
-    "jest": "23.6.0",
+    "jest": "24.0.0",
     "jest-pnp-resolver": "1.0.1",
     "jest-resolve": "23.6.0",
     "mini-css-extract-plugin": "0.4.3",
@@ -53,15 +53,15 @@
     "react-test-renderer": "^16.6.3",
     "resolve": "1.8.1",
     "sass-loader": "7.1.0",
-    "storybook": "^1.0.0",
+    "storybook": "^5.1.11",
     "style-loader": "0.23.0",
-    "terser-webpack-plugin": "1.1.0",
+    "terser-webpack-plugin": "1.4.2",
     "url-loader": "1.1.1",
     "webpack": "4.29.0",
-    "webpack-dev-server": "3.1.9",
+    "webpack-dev-server": "3.1.11",
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "3.6.3",
-    "snyk": "^1.116.4"
+    "snyk": "^1.305.1"
   },
   "scripts": {
     "start": "node scripts/start.js",
@@ -73,7 +73,7 @@
     "predeploy": "yarn build && yarn build-storybook && cp -r storybook-static build",
     "deploy": "gh-pages -d build",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "yarn run snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
